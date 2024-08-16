@@ -1,0 +1,19 @@
+[
+	{
+		"flightNumber": "XYP 12345",
+		"date": "Wed, 11th August 2024",
+		"time": " 12:43",
+		"endTime": "23:59",
+		"operator": "British Airways",
+		"departure": "London Gatwick",
+		"departureLocation": "LDN ·  Terminal 1",
+		"expectedTime": "02:23",
+		"departureDelayed": true,
+		"delayedTime": "1h 40m",
+		"destination": "Amsterdam",
+		"destinationLocation": "AMS ·  Terminal 1",
+		"scheduledTime": "14:43",
+		"destinationExpectedTime": "12:43",
+		"destinationDelayed": false
+	}
+]
