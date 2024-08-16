@@ -53,7 +53,7 @@
 				</div>
 				<div class="time-column">
 					<span class="time-label">Expected</span>
-					<span class="time-value expected">
+					<span class="time-value" class:expected={journey.departureDelayed}>
 						{journey.expectedTime}
 					</span>
 				</div>
@@ -81,7 +81,9 @@
 				</div>
 				<div class="time-column">
 					<span class="time-label">Expected</span>
-					<span class="time-value expected">{journey.destinationExpectedTime}</span>
+					<span class="time-value expected" class:expected-on-time={!journey.destinationDelayed}
+						>{journey.destinationExpectedTime}</span
+					>
 				</div>
 				<div class="time-column">
 					{#if journey.destinationDelayed}
@@ -246,6 +248,10 @@
 
 	.expected {
 		color: #ff423f;
+	}
+
+	.expected-on-time {
+		color: #72b520;
 	}
 
 	.delayed-bubble {

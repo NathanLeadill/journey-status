@@ -16,13 +16,16 @@
 			})
 		});
 		const data = await request.json();
-		let { error, response } = data;
-		if (error) {
-			errors = [error];
+		console.log('data', data);
+
+		let { message, status } = data;
+		console.log('message', message, status, 'status');
+
+		if (!status) {
+			errors = [message];
 		} else {
 			errors = [];
-			journey = response;
-			console.log(journey);
+			journey = message;
 		}
 	}
 </script>
